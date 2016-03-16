@@ -256,9 +256,9 @@
                 this.scope.content = this.content;
                 $fkEl.html($compile(html.data)(this.scope));
                 if (this.hasReachedEndFn()) {
-                    $('.nextBtn').text("Finish");
+                    $('.nextBtn').text("Terminer");
                 } else {
-                    $('.nextBtn').html("Next&nbsp;<i class='glyphicon glyphicon-chevron-right'>");
+                    $('.nextBtn').html("Suivant&nbsp;<i class='glyphicon glyphicon-chevron-right'>");
                 }
                 $fkEl.slideDown(100, function () {
                     $('.nextBtn').one("click",function(){ self.goToNextFn(200);});
